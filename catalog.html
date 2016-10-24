@@ -37,7 +37,7 @@
     <main class="container">
       <div class="shop-navigation">
       <h1>Средства для ухода</h1>
-      <ul id="breadcrumbs">
+      <ul class="breadcrumbs">
         <li>
           <a href="№">Главная</a>
         </li>
@@ -51,40 +51,64 @@
       </div>
       <div class="index-content">
         <div class="index-content-left-column">
-          <section class="filter">
+          <div class="filter">
             <form class="select-filters" action="https://echo.htmlacademy.ru" method="post">
-              <h2 class="filter-title">Производители</h2>
-              <input type="checkbox" name="baxter-of-california" id="baxter-of-california-field" checked>
-              <label for="baxter-of-california-field">Baxter of California</label>
-              <br>
-              <input type="checkbox" name="mr-natty" id="mr-natty-field">
-              <label for="mr-natty-field">Mr Natty</label>
-              <br>
-              <input type="checkbox" name="suavecito" id="suavecito-field" checked>
-              <label for="suavecito-field">Suavecito</label>
-              <br>
-              <input type="checkbox" name="malin-goetz" id="malin-goetz-field">
-              <label for="malin-goetz-field">Malin+Goetz</label>
-              <br>
-              <input type="checkbox" name="murrays" id="murrays-field">
-              <label for="murrays-field">Murray's</label>
-              <br>
-              <input type="checkbox" name="american-crew" id="american-crew-field" checked>
-              <label for="american-crew-field">American crew</label> 
-              <h2 class="filter-title">Производители</h2>   
-              <input type="radio" name="switch-one" id="switch-one-field" value="equipments">
-              <label for="switch-one-field">Бритвенные принадлежности</label>
-              <br>
-              <input type="radio" name="switch-two" id="switch-two-field" value="treatments" checked>
-              <label for="switch-two-field">Средства для ухода</label>
-              <br>
-              <input type="radio" name="switch-three" id="switch-three-field" value="accessories">
-              <label for="switch-three-field">Аксессуары</label>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Производители</legend>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="baxter-of-california" checked>
+                  Baxter of California</label>
+                </div>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="mr-natty">
+                  Mr Natty</label>
+                </div>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="suavecito" checked>
+                  Suavecito</label>
+                </div>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="malin-goetz">
+                  Malin+Goetz</label>
+                </div>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="murrays">
+                  Murray's</label>
+                </div>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="american-crew" checked>
+                  American crew</label> 
+                </div>
+              </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Группа товаров</legend>   
+                  <div>
+                    <label class="radio-label">
+                      <input type="radio" name="switch-one" value="equipments">
+                    Бритвенные принадлежности</label>
+                  </div>
+                  <div>
+                    <label class="radio-label">
+                      <input type="radio" name="switch-two" value="treatments" checked>
+                    Средства для ухода</label>
+                  </div>
+                  <div>
+                    <label class="radio-label">
+                      <input type="radio" name="switch-three" value="accessories">
+                    Аксессуары</label>
+                  </div>
+              </fieldset>
             </form>
-          </section>
+          </div>
         </div>
-        <section class="catalog">
-          <article class="catalog-item">
+        <div class="catalog">
+          <div class="catalog-item">
             <figure class="catalog-item-photo">
               <img src="img/photo-1.jpg" width="150" height="100" alt="Набор для путешествий &laquo;Baxter of California&raquo;">
             </figure>
@@ -93,8 +117,8 @@
               <span class="price">2 990 руб.</span>
               <button class="btn buy-item-1" type="button">Купить</button>
             </div>
-          </article>
-          <article class="catalog-item">
+          </div>
+          <div class="catalog-item">
             <figure class="catalog-item-photo">
               <img src="img/photo-2.jpg" width="150" height="100" alt="Увлажняющий кондиционер &laquo;Baxter of California&raquo;">
             </figure>
@@ -103,8 +127,8 @@
               <span class="price">750 руб.</span>
               <button class="btn buy-item-2" type="button">Купить</button>
             </div>
-          </article>
-          <article class="catalog-item">
+          </div>
+          <div class="catalog-item">
             <figure class="catalog-item-photo">
               <img src="img/photo-3.jpg" width="150" height="100" alt="Гель для волос &laquo;Suavecito&raquo;">
             </figure>
@@ -113,8 +137,8 @@
               <span class="price">290 руб.</span>
               <button class="btn buy-item-3" type="button">Купить</button>
             </div>
-          </article> 
-          <article class="catalog-item">
+          </div> 
+          <div class="catalog-item">
             <figure class="catalog-item-photo">
               <img src="img/photo-4.jpg" width="150" height="100" alt="Глина для укладки волос &laquo;America crew&raquo;">
             </figure>
@@ -123,8 +147,8 @@
               <span class="price">500 руб.</span>
               <button class="btn buy-item-4" type="button">Купить</button>
             </div>
-          </article>
-          <article class="catalog-item">
+          </div>
+          <div class="catalog-item">
             <figure class="catalog-item-photo">
               <img src="img/photo-5.jpg" width="150" height="100" alt="Гель для волос &laquo;America crew&raquo;">
             </figure>
@@ -133,8 +157,8 @@
               <span class="price">300 руб.</span>
               <button class="btn buy-item-5" type="button">Купить</button>
             </div>
-          </article>
-          <article class="catalog-item">
+          </div>
+          <div class="catalog-item">
             <figure class="catalog-item-photo">
               <img src="img/photo-6.jpg" width="150" height="100" alt="Набор для бритья &laquo;Baxter of California&raquo;">
             </figure>
@@ -143,8 +167,8 @@
               <span class="price">3 900 руб.</span>
               <button class="btn buy-item-6" type="button">Купить</button>
             </div>
-          </article>
-        </section>
+          </div>
+        </div>
       </div>
       <div class="go-to-page">
         <ul>
@@ -165,22 +189,22 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <section class="footer-contacts">
+        <div class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
-        </section>
-        <section class="footer-social">
+        </div>
+        <div class="footer-social">
           <p>Давайте дружить!</p>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
           <p>Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+        </div>
       </div>
     </footer>
   </body>
