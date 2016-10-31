@@ -1,11 +1,15 @@
+html, 
 body {
+    min-width: 1122px;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
     font-weight: normal;
     font-family: "PT Sans Narrow", "Arial";
 } 
-    
+
 h1,
 h2  {
     font-size: 30px;
@@ -13,3 +17,259 @@ h2  {
     color: #000000;
     font-weight: bold;
 } 
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 3px solid red;  /*fffffffffffffffffffffffffff*/
+}
+
+.main-header {
+  margin-bottom: 60px;
+  outline: 1px solid green;
+}
+
+.logo {
+    float: left;
+    width: 111px;
+    min-height: 24px;
+}
+
+.main-navigation {
+  float: left;
+  width: 685px;
+  min-height: 70px;
+  outline: 1px solid red;
+}
+
+.main-navigation ul {
+    padding: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+  min-height: 70px;
+}
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  min-height: 175px;
+  margin-right: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  outline: 1px solid black;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
+/*catalog.html*/
+
+
+.shop-navigation h1 {
+    margin-bottom: 28px;
+    outline: 1px solid red;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebar.filter {
+    float: left;
+    width: 175px;
+    min-height: 575px;
+    outline: 1px solid red;
+}
+
+.sidebar.filter fieldset {
+    border: none;
+}
+
+.catalog {
+    float: right;
+    width: 700px;
+    min-height: 680px;
+    padding-top: 1px;
+    font-size: 0;
+    outline: 1px solid green;
+}
+
+.catalog-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    min-height: 286px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: 1px solid blue;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.catalog-item:nth-last-child(2),
+.catalog-item:nth-last-child(3),
+.catalog-item:nth-last-child(4) {
+    margin-bottom: 45px;
+    outline: 1px solid blue;
+}
+
+.catalog-item-photo {
+    width: 220px;
+    min-height: 165px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+.catalog-item-photo img {
+    vertical-align: top;
+}
+
+.pagination ul {
+    outline: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+} 
+    
+.pagination li {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-right: 4px;
+    vertical-align: middle;
+    background: black;
+}
+
+.pagination li.active {
+    background: white;
+}
+
+.main-footer {
+    outline: 1px solid red;
+    }
+    
+/*catalog-item.html*/
+
+.item-photo {
+    float: left;
+    width: 460px;
+    min-height: 670px;
+    margin: 0;
+    outline: 1px solid blue;
+}
+
+.main-photo {
+    outline: 1px solid red;
+}
+
+.main-photo img {
+    vertical-align: top;
+}
+
+.item-info {
+    float: right;
+    width: 390px;
+    min-height: 640px;
+    padding-top: 30px;
+    outline: 1px solid green;
+}
+
+.preview-photo {
+    margin-top: 20px;
+    font-size: 0;
+    }
+
+.preview-photo img {
+    display: inline-block;
+    width: 140px;
+    min-height: 149px;
+    margin: 0;
+    margin-right: 20px;
+    font-size: 14px;
+    vertical-align: top;
+    outline: 1px solid yellow;
+    }
+    
+.preview-photo img:last-child {
+    margin-right: 0;
+}    
